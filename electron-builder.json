@@ -1,0 +1,16 @@
+{
+    "appId": "com.trishon.electron-course",
+    "files": ["dist-electron", "dist-react"],
+    "extraResources": ["dist-electron/preload.cjs"]
+,    "icon": "./desktopIcon.jpeg",
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category":"Utility"
+    },
+    "win": {
+        "target": ["portable", "msi"]
+    }
+}
